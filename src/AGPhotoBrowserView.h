@@ -10,6 +10,7 @@
 
 #import "AGPhotoBrowserDelegate.h"
 #import "AGPhotoBrowserDataSource.h"
+#import "AGPhotoBrowserZoomableView.h"
 
 @interface AGPhotoBrowserView : UIView
 
@@ -17,6 +18,10 @@
 @property (nonatomic, weak) id<AGPhotoBrowserDataSource> dataSource;
 
 @property (nonatomic, strong, readonly) UIButton *doneButton;
+
+@property (nonatomic, strong) NSString *selectedPhotosCategory;
+
+@property (nonatomic, strong) AGPhotoBrowserZoomableView *selectedZoomable;
 
 - (void)show;
 - (void)showFromIndex:(NSInteger)initialIndex;

@@ -27,5 +27,6 @@
 @optional
 - (void)resetZoomScale;
 - (void)setCellImageWithURL:(NSURL *)url;
+- (id)getZoomable;
 
 @end

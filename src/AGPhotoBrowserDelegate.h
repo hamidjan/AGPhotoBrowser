@@ -16,5 +16,6 @@
 
 - (void)photoBrowser:(AGPhotoBrowserView *)photoBrowser didTapOnDoneButton:(UIButton *)doneButton;
 - (void)photoBrowser:(AGPhotoBrowserView *)photoBrowser didTapOnActionButton:(UIButton *)actionButton atIndex:(NSInteger)index;
+- (void)photoBrowser:(AGPhotoBrowserView *)photoBrowser didSelectZoomable: (id)zoomable;
 
 @end
