@@ -140,6 +140,9 @@
 	[self.zoomableView setZoomScale:1.];
 }
 
+- (id)getZoomable {
+    return self.zoomableView;
+}
 
 #pragma mark - Private methods
 
