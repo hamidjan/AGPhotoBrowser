@@ -8,6 +8,7 @@
 
 #import "AGPhotoBrowserCell.h"
 #import "AGPhotoBrowserZoomableView.h"
+#import "SDWebImage.h"
 
 @interface AGPhotoBrowserCell () <AGPhotoBrowserZoomableViewDelegate>
 
@@ -119,6 +120,10 @@
 
 
 #pragma mark - Setters
+
+- (void)setCellImageWithURL:(NSURL *)url {
+    [self.zoomableView.imageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"placeholder-5"]];
+}
 
 - (void)setCellImage:(UIImage *)cellImage
 {

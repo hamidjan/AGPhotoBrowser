@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D3D8ABC184202DE00154B6B /* AGPhotoBrowserZoomableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D8ABB184202DE00154B6B /* AGPhotoBrowserZoomableView.m */; };
 		A2A200B8187EF38D0053CA21 /* sample4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2A200B7187EF38D0053CA21 /* sample4.jpg */; };
+		CAB9A304B0374A5B6B8E6E9A /* libPods-AGPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E99FA3F3CF146BDD95AE09A /* libPods-AGPhotoBrowser.a */; };
 		DE13F9EC1879A23A00449C49 /* AGPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE13F9EB1879A23A00449C49 /* AGPhotoBrowserCell.m */; };
 		DE2A3D7A17A575C700CE0CA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A3D7917A575C700CE0CA5 /* UIKit.framework */; };
 		DE2A3D7C17A575C700CE0CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A3D7B17A575C700CE0CA5 /* Foundation.framework */; };
@@ -46,10 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61FFCFBCE627B8281E89A1CD /* Pods-AGPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGPhotoBrowser.release.xcconfig"; path = "Target Support Files/Pods-AGPhotoBrowser/Pods-AGPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		7E99FA3F3CF146BDD95AE09A /* libPods-AGPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3D8ABA184202DE00154B6B /* AGPhotoBrowserZoomableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPhotoBrowserZoomableView.h; sourceTree = "<group>"; };
 		8D3D8ABB184202DE00154B6B /* AGPhotoBrowserZoomableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPhotoBrowserZoomableView.m; sourceTree = "<group>"; };
 		A25C8828187AEB600097C690 /* AGPhotoBrowserCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPhotoBrowserCellProtocol.h; sourceTree = "<group>"; };
 		A2A200B7187EF38D0053CA21 /* sample4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample4.jpg; sourceTree = "<group>"; };
+		C3794D0F526E89CD4F51F607 /* Pods-AGPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGPhotoBrowser.debug.xcconfig"; path = "Target Support Files/Pods-AGPhotoBrowser/Pods-AGPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		DE13F9EA1879A23A00449C49 /* AGPhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPhotoBrowserCell.h; sourceTree = "<group>"; };
 		DE13F9EB1879A23A00449C49 /* AGPhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPhotoBrowserCell.m; sourceTree = "<group>"; };
 		DE2A3D7617A575C700CE0CA5 /* AGPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,7 @@
 				DE2A3D7C17A575C700CE0CA5 /* Foundation.framework in Frameworks */,
 				DE2A3D7E17A575C700CE0CA5 /* CoreGraphics.framework in Frameworks */,
 				KIYDQKWBMRKIEYEVRWSLKUDQ /* libz.dylib in Frameworks */,
+				CAB9A304B0374A5B6B8E6E9A /* libPods-AGPhotoBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEA648AEA4A4F4DCA98E0FB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3794D0F526E89CD4F51F607 /* Pods-AGPhotoBrowser.debug.xcconfig */,
+				61FFCFBCE627B8281E89A1CD /* Pods-AGPhotoBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DE2A3D6D17A575C700CE0CA5 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +135,7 @@
 				DE2A3DA317A575C700CE0CA5 /* AGPhotoBrowserTests */,
 				DE2A3D7817A575C700CE0CA5 /* Frameworks */,
 				DE2A3D7717A575C700CE0CA5 /* Products */,
+				AEA648AEA4A4F4DCA98E0FB2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +157,7 @@
 				DE2A3D7D17A575C700CE0CA5 /* CoreGraphics.framework */,
 				DE2A3D9D17A575C700CE0CA5 /* SenTestingKit.framework */,
 				HYXIFWTDXJPPRRMDCEPMDTJH /* libz.dylib */,
+				7E99FA3F3CF146BDD95AE09A /* libPods-AGPhotoBrowser.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE2A3DAE17A575C700CE0CA5 /* Build configuration list for PBXNativeTarget "AGPhotoBrowser" */;
 			buildPhases = (
+				7A85B8D6B898AAA635267B02 /* [CP] Check Pods Manifest.lock */,
 				DE2A3D7217A575C700CE0CA5 /* Sources */,
 				DE2A3D7317A575C700CE0CA5 /* Frameworks */,
 				DE2A3D7417A575C700CE0CA5 /* Resources */,
@@ -325,6 +343,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7A85B8D6B898AAA635267B02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AGPhotoBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DE2A3D9A17A575C700CE0CA5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,6 +505,7 @@
 		};
 		DE2A3DAF17A575C700CE0CA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3794D0F526E89CD4F51F607 /* Pods-AGPhotoBrowser.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -479,6 +520,7 @@
 		};
 		DE2A3DB017A575C700CE0CA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FFCFBCE627B8281E89A1CD /* Pods-AGPhotoBrowser.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AGPhotoBrowser/AGPhotoBrowser-Prefix.pch";
